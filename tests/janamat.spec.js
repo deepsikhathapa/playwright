@@ -15,7 +15,7 @@ test('janamat party', async ({}) => {
   await page.getByRole('textbox', { name: 'Password / PIN Number' }).fill('12345678');
   await page.getByRole('button', { name: 'Log in' }).click();
   await page.getByRole('link', { name: 'ram' }).click();
-  await page.getByRole('button123', { name: ' Logout' }).click();
+  await page.getByRole('button', { name: ' Logout' }).click();
   await page.close();
 
   // ---------------------
